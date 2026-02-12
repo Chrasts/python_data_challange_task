@@ -19,12 +19,14 @@ Sheet: SHARE_PRICE_HIST
 - CURRENCY
 - SHARE_PRICE
 - S_FROM
+- TS_FROM
 
 Sheet: SHARE_PRICE
 - COMPANY
 - CURRENCY
-- SHARE_PRICE
+- AMOUNT
 - S_FROM
+- TS_FROM
 
 Default input file name used in scripts:
 ChallengeTask_data.xlsx
