@@ -14,13 +14,13 @@ The goal is reproducibility and clarity rather than production-grade generalizat
 
 Expected Excel structure:
 
-Sheet: HISTORICAL_SHARE_PRICE
+Sheet: SHARE_PRICE_HIST
 - COMPANY
 - CURRENCY
 - SHARE_PRICE
 - S_FROM
 
-Sheet: CURRENT_SHARE_PRICE
+Sheet: SHARE_PRICE
 - COMPANY
 - CURRENCY
 - SHARE_PRICE
@@ -86,7 +86,7 @@ Currently deduplicates by pairs of timestamp and company name only.
 
 Multi-Entity Support:
 Scripts are not fully generalized for multiple companies or currencies in one run.
-For multi-currency datasets it should chose one and convert, or group by currencies and deduplicate by triple of timestap, company name and currency.
+For multi-currency datasets it should choose one and convert, or group by currencies and deduplicate by triple of timestamp, company name and currency.
 
 
 
