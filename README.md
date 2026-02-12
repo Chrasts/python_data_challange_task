@@ -3,8 +3,8 @@
 ## Overview
 This repository contains two independent solutions based on the provided case study:
 
-- Solution 1–2: Reconstruction of monthly OUTPUT table from historical share price data.
-- Solution 3: Maximum wealth calculation using at most 3 trades under a simplified trading model.
+- reconstruct_output: Reconstruction of monthly OUTPUT table from historical share price data.
+- trading_strategy: Maximum wealth calculation using at most 3 trades under a simplified trading model.
 
 The goal is reproducibility and clarity rather than production-grade generalization.
 
@@ -33,8 +33,8 @@ ChallengeTask_data.xlsx
 
 ## How to Run
 
-Solution 1–2:
-python "solution 1 and 2.py"
+reconstruct_output:
+python "reconstruct_output.py"
 
 Output:
 OUTPUT.xlsx
@@ -50,7 +50,7 @@ Console output:
 
 ## Solution Logic
 
-### Solution 1–2 (Monthly OUTPUT Reconstruction)
+### reconstruct_output.py (Monthly OUTPUT Reconstruction)
 For each month boundary:
 - Take price at start of month T
 - Take price at start of month T+1
@@ -60,7 +60,7 @@ Records are generated only when a full month price change exists.
 
 ---
 
-### Solution 3 (Trading Optimization)
+### trading_strategy (Trading Optimization)
 Dynamic programming solution computing maximum achievable wealth using:
 - Initial capital = 1
 - Maximum = 3 trades (buy + sell pairs)
